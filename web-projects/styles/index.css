@@ -1,5 +1,5 @@
 
-p,li {
+li {
     font-size: 10px;
 }
 
@@ -25,18 +25,35 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-}
+
 
 .navfont {
     font-size: 18px;
-    font-weight: bold;
+    
+    color: whitesmoke;
 
+}
+
+
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/capture.png');
+}
+
+.quotes{
+    padding: 40px;
+    text-align: center;
+    font:bold;
+    font-size: 40px;
+}
+
+.quoteName{
+    text-align: center;
+    padding-right: 40px;
+    font:bold;
+    font-size: 20px;
 }
 
 /*
@@ -44,7 +61,5 @@ button {
     green - background-color:  #99ffcc;
     background-color: whitesmoke;
 */
-
-
 
 
