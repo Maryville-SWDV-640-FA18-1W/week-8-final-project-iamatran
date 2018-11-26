@@ -1,3 +1,11 @@
+/*This media query will hide the fill class on a smaller screen*/
+
+@media screen and (max-width: 600px) {
+    div.fill {
+      display: none;
+    }
+  }
+
 
 
 
