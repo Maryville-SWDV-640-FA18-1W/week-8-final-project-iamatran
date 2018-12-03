@@ -4,7 +4,6 @@
 
 
 /*This media query will hide the fill class on a smaller screen*/
-
 @media screen and (max-width: 600px) {
     div.fill {
       display: none;
@@ -22,73 +21,6 @@ body {
     background-color: @black;
 }
 
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS';
-}
-
-h2 {
-    font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h3 {
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-p {
-    
-}
-
-
-.navfont {
-    font-size: 18px;
-    color: @white;
-}
-
-
-.fill {
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url('../images/capture.png');
-}
-
-.quotes{
-    padding: 40px;
-    text-align: center;
-    font:bold;
-    font-size: 40px;
-}
-
-.quoteName{
-    text-align: center;
-    padding-right: 40px;
-    font:bold;
-    font-size: 20px;
-}
-
-.rcorners {
-    border-radius: 25px;
-    background: @green;
-    padding: 100px; 
-    margin: 30px;
-
-}
-
-.box{
-    background: @white;
-    padding: 100px; 
-    margin: 30px;
-}
-
-button{
-
-    align:right;
-}
-
 footer {
     border-top: 1px solid @white;
     margin-top: 50px;
@@ -97,7 +29,86 @@ footer {
     color: @white;
 }
 
-button {
+
+.navfont {
+    font-size: 18px;
+    color: @white;
+}
+
+.headers{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: @black;
+
+
+    h1 {
+        font-size: 28px;
+        //font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+.heroimage{
+    .fill {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../images/capture.png');
+    }
+    
+    .quotes{
+        padding: 40px;
+        text-align: center;
+        font:bold;
+        font-size: 40px;
+    }
+    
+    .quoteName{
+        text-align: center;
+        padding-right: 40px;
+        font:bold;
+        font-size: 20px;
+    }
+
+}
+
+
+.boxandsquares{
+    .rcorners {
+        border-radius: 25px;
+        background: @green;
+        padding: 100px; 
+        margin: 30px;
+    
+    }
+    
+    .box{
+        background: @white;
+        padding: 100px; 
+        margin: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+button{
     background-color: @black;
     border-radius: 10px;
     padding: 10px;
