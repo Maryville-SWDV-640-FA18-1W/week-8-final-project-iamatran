@@ -4,6 +4,9 @@
     display: none;
   }
 }
+p {
+  color: whitesmoke;
+}
 li {
   font-size: 10px;
 }
