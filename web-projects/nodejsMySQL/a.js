@@ -15,6 +15,10 @@ con.connect(function(err) {
   });
 });
 
+//the sql results are stored in the result var
+
+
+
 
 
 

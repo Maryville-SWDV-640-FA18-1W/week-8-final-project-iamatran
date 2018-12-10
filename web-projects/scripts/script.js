@@ -1,48 +1,54 @@
-//Since I don't have the mySQL running, I'm going to simulate the results of a query for my data
-
-var query{
-    EMPLOYEE_ID: 100,
-    FIRST_NAME: 'Steven',
-    LAST_NAME: 'King',
-    EMAIL: 'SKING@example.com',
-    PHONE_NUMBER: '515.123.4567',
-    HIRE_DATE: Wed Jun 17 1987 00:00:00 GMT+0530 (India Standard Time),
-    JOB_ID: 'AD_PRES',
-    SALARY: 24000,
-    COMMISSION_PCT: 0,
-    MANAGER_ID: 0,
-    DEPARTMENT_ID: 90
-}
+//Still working on getting the mySQL query to populate on HTML, so I'm going to simulate the results of a query for my data
 
 
 
-//Mustache JS attempt
-
+//Mustache JS 
 
 $(document).ready(function(){
     var template = $("#template").html();
     Mustache.parse(template);
 
     var rendered = Mustache.render(template, {
-        user:{
-            name: "Steve",
-            age: "20",
-            home: "Dallas"
+        user: {
+            Id: "1",
+            UserName: "candykid",
+            Name: "Peter Tran",
+            BillingAddress: "1",
+            HomeAddress: "2"
+            
         },
-        show:true
-    })
 
+        address: {
+            Id: 1,
+            Address1: "123 Fake St.",
+            Address2: "St. Louis, MO"
+        },
+
+        orderhistory: [
+            {
+                ordernumber: "1001",
+                date: "11/02/2018",
+                price: "10.99"
+            },
+            {
+                ordernumber: "1002",
+                date: "11/07/2018",
+                price: "12.99"
+            },
+            {
+                ordernumber: "1003",
+                date: "11/22/2018",
+                price: "13.99"
+            },
+            {
+                ordernumber: "1004",
+                date: "12/08/2018",
+                price: "9.99"
+            }
+        ]
+    })
     $("#target").html(rendered);
 });
-
-
-
-
-
-
-
-
-
 
 
 

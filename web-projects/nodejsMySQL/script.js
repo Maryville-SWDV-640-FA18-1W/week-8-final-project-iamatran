@@ -1,16 +1,14 @@
 
-//my attempt to connect a mySQL database using nodeJS - got a connection error - need to do more testing
+//my attempt to connect a mySQL database using nodeJS got a successful query
 
-
-//w3 schools tutorial
 
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "yourusername",
-  password: "yourpassword",
-  database: "foodDeliverydb"
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "fooddeliverydb"
 });
 
 con.connect(function(err) {
@@ -20,7 +18,6 @@ con.connect(function(err) {
     console.log(result);
   });
 });
-
 
 
 
