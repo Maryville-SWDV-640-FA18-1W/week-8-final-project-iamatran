@@ -1,8 +1,3 @@
-//Still working on getting the mySQL query to populate on HTML, so I'm going to simulate the results of a query for my data
-
-
-
-//Mustache JS 
 
 $(document).ready(function(){
     var template = $("#template").html();
@@ -37,13 +32,43 @@ $(document).ready(function(){
             },
             {
                 ordernumber: "1003",
-                date: "11/22/2018",
+                date: "11/09/2018",
                 price: "13.99"
             },
             {
                 ordernumber: "1004",
-                date: "12/08/2018",
+                date: "11/15/2018",
                 price: "9.99"
+            },
+            {
+                ordernumber: "1005",
+                date: "11/19/2018",
+                price: "4.00"
+            },
+            {
+                ordernumber: "1006",
+                date: "12/02/2018",
+                price: "32.34"
+            },
+            {
+                ordernumber: "1007",
+                date: "12/03/2018",
+                price: "26.53"
+            },
+            {
+                ordernumber: "1008",
+                date: "12/07/2018",
+                price: "21.23"
+            },
+            {
+                ordernumber: "1009",
+                date: "12/10/2018",
+                price: "6.67"
+            },
+            {
+                ordernumber: "1010",
+                date: "12/11/2018",
+                price: "8.42"
             }
         ]
     })
@@ -53,3 +78,14 @@ $(document).ready(function(){
 
 
 
+
+
+/*
+$(function() {
+    $.getJSON('data.json', function(data) {
+        var template = $('#meowtemplate').html();
+        var html = Mustache.to_html(template, data);
+        $('#target').html(html);
+    });
+});
+*/
