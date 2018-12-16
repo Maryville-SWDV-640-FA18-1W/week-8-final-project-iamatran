@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="./styles/main.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/jquery-3.3.1.min.js"></script>
+    <script src="./scripts/mustache.js"></script>
+    <script src="./scripts/script.js"></script>
+    <title>EXPRESS - Food Delivery Service</title>
+
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="img-responsive" src="./images/logo.png" width=20% alt="company logo">
+                    <button type = "button" class = "navbar-toggle" 
+                            data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                            <span class = "sr-only">Toggle navigation</span>
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                    </button>
+                </div>
+                <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navfont" href="index.html">Home</a></li>
+                        <li><a class="navfont" href="#">Services</a></li>
+                        <li><a class="navfont" href="#">About</a></li>
+                        <li><a class="navfont"href="#">Contact</a></li>
+                        <li><a class="navfont"href="userProfile.html"></span>Profile</span></a></li>
+                        <li><a class="navfont"href="#">Order<span class="glyphicon glyphicon-shopping-cart"></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+
+
+
+    <script id="template" type="x-tmpl-mustache">
+
+        <div class="container-fluid headers boxandsquares">
+            <div class="col-md-1"></div>
+            <div class="col-md-6 rcorners"> 
+                <h1> Welcome {{user.Name}}! </h1> 
+                <h3> Your username is {{user.UserName}}. </h3>
+            </div>
+            <div class="col-md-4 box"> 
+                <h2>Delivery Address</h2> 
+                <h3>{{address.Address1}}</h3>
+                <h3>{{address.Address2}}</h3>
+                <button type="button" class="button">Update Address</button> 
+            </div>
+        </div>
+
+        <div class="container-fluid"> 
+            <div class="col-md-1"></div> 
+            <div class="col-md-6">        
+                <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Order Number</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#orderhistory}}
+                        <tr>
+                            <td>{{date}}</td>
+                            <td>{{ordernumber}}</td>
+                            <td>${{price}}</td>
+                        </tr>
+                    {{/orderhistory}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"></div> 
+        </div>
+
+
+    </script>
+
+    <div id="target"></div>
+
+
+
+
+</body>
+<body>
+    <footer>
+        <p>Exprss is a fictional food delivery service to demonstrate the use of: </p>    
+        <p>Responsive website design utilizing the Bootstrap opensource toolkit</p>
+        <p>LESS preprocessor style sheet language</p>
+        <p>Mustache JS templates for dynamic content</p>
+    </footer>
+</body>
+</html>
+

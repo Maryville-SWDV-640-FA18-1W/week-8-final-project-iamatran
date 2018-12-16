@@ -21,7 +21,7 @@
   margin-top: 100px;
 }
 form {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .messagebox {
   height: 300px;
@@ -30,6 +30,15 @@ form {
   background: white;
   border: #333;
   color: #333;
+}
+.contactussize {
+  margin-bottom: 30px;
+}
+.aboutcards {
+  margin-top: 100px;
+}
+.registerspace {
+  margin-top: 20px;
 }
 .signinbody {
   display: -ms-flexbox;
@@ -69,4 +78,16 @@ form {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
