@@ -13,10 +13,16 @@ $(document).ready(function(){
             
         },
 
-        address: {
+        billingaddress: {
             Id: 1,
-            Address1: "123 Fake St.",
-            Address2: "St. Louis, MO"
+            Address1: "123 Fake Street Boulevard",
+            Address2: "St. Louis, MO, 01234"
+        },
+
+        deliveryaddress: {
+            Id: 1,
+            Address1: "456 Fake Street Avenue",
+            Address2: "St. Louis, MO, 56789"
         },
 
         orderhistory: [
@@ -72,26 +78,64 @@ $(document).ready(function(){
             }
         ],
 
-        restaurant: 
+        food: [
             {
-            id: "001",
-            name: "Bob's Burgers",
-            appetizer: {
-                item1: "Nachos",
-                item: "Cheese Fries",
-                item: "Cheese Sticks"
+                item: "1/3 lb. Classic Burger",
+                description: "Lettuce, tomato, onions and pickles. USDA choice chuck. Choice of toasted white or wheat bun.",
+                price: "6.29",
+                image: "burger.jpg"
             },
-            entrees: {
-                item: "Burger",
-                item: "Cheese Burger",
-                item: "Bacon Cheese Burger"
+            {
+                item: "1/3 lb. Mushroom Swiss Burger",
+                description: "Melted Swiss cheese and sauteed mushrooms. USDA choice chuck. Choice of toasted white or wheat bun.",
+                price: "7.29",
+                image: "mushroom.jpg"
             },
-            pictures: {
-              picture1: "image.jpg",
-              picture2: "image.jpg"
+            {
+                item: "Southwest Chicken Salad",
+                description: "Grilled chicken breast on romaine, tomato, cucumber, onions, croutons and shredded cheddar, served with choice of dressing.",
+                price: "7.99",
+                image: "salad.jpg"
+            },
+            {
+                item: "1/3 lb. The Works Burger",
+                description: "Bacon, grilled onions, grilled mushrooms. Choice of toasted white or wheat bun.",
+                price: "7.79",
+                image: "works.jpg"
+            },
+            {
+                item: "1/3 lb. Bacon BBQ Burger",
+                description: "Bacon, cheddar, onion strings and BBQ sauce.",
+                price: "7.79",
+                image: "bacon.jpg"
+            },
+            
+            {
+                item: "Original Chicken Sandwich",
+                description: "Hand battered chicken breast on a toasted white bun.",
+                price: "6.29",
+                image: "chickensand.jpg"
+            },
+            {
+                item: "Chicken Strips",
+                description: "Hand battered chicken tenderloins.",
+                price: "6.29",
+                image: "chicken.jpg"
+            },
+            {
+                item: "Freshly Cut Fries",
+                description: "Lightly Salted",
+                price: "3.29",
+                image: "fries.jpg"
+            },
+            {
+                item: "Classic Shake",
+                description: "Choice of Vanilla, Chocolate, or Strawberry.",
+                price: "4.29",
+                image: "shake.jpg"
             }
-        
-            }
+
+        ]
         
 
 
