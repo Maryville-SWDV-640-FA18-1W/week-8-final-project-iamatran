@@ -155,7 +155,7 @@ $(document).ready(function(){
             {
                 quantity: "1",
                 item: "Chicken Strips",
-                description: "Hand battered chicken tenderloins.",
+                description: "Extra Crispy",
                 price: "6.29",
             },
             {

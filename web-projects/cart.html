@@ -38,70 +38,65 @@
 
 
     <script id="template" type="x-tmpl-mustache">
-
-
-            <div class="container" >
-                    <div class="row">
-            
-                        <div class="col-sm-8">
-                                <table class="table table-hover">
-                                    <thead class="thead-dark">
+        <div class="container" >
+                <div class="row">
+                    <div class="col-sm-8">
+                            <table class="table table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Quantity</th>
+                                        <th>Item</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#cart}}
                                         <tr>
-                                            <th>Quantity</th>
-                                            <th>Item</th>
-                                            <th>Description</th>
-                                            <th>Price</th>
+                                            <td>{{quantity}}</td>
+                                            <td>{{item}}</td>
+                                            <td>{{description}}</td>
+                                            <td>${{price}}</td>
+                                        </tr>
+                                    {{/cart}}
+                                </tbody>
+                                <thead class="thead-dark">
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Total</th>
+                                            <th><u>$23.45</u></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        {{#cart}}
-                                            <tr>
-                                                <td>{{quantity}}</td>
-                                                <td>{{item}}</td>
-                                                <td>{{description}}</td>
-                                                <td>${{price}}</td>
-                                            </tr>
-                                        {{/cart}}
-                                    </tbody>
-
-
-                                    <thead class="thead-dark">
-                                            <tr>
-                                                <th></th>
-                                                <th></th>
-                                                <th>Total</th>
-                                                <th><u>$23.45</u></th>
-                                            </tr>
-                                        </thead>
-                                </table>
-                                <a href="order.html" class="btn btn-primary btn-lg">Return to Order Page</a>
-                                <a type="submit" class="btn btn-primary btn-lg" href="receipt.html" style="background: #007BFF">Confirm Order</a>
-                                
-                        </div>
-                        <div class="col-sm-4">
-                                <div class="card" style="margin-top:">
-                                        <div class="card-header">
-                                            <h4>Billing Address</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">{{billingaddress.Address1}}</h5>
-                                            <h5 class="card-title">{{billingaddress.Address2}}</h5>
-                                            <a href="address.html" class="btn btn-primary">Update Address</a>
-                                        </div>
+                            </table>
+                            <a href="order.html" class="btn btn-primary btn-lg">Return to Order Page</a>
+                            <a type="submit" class="btn btn-primary btn-lg" href="receipt.html" style="background: #007BFF">Confirm Order</a>
+                            
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="card" style="margin-top:">
+                                    <div class="card-header">
+                                        <h4>Billing Address</h4>
                                     </div>
-                                <div class="card" style="margin-top:  15px;">
-                                        <div class="card-header">
-                                            <h4>Delivery Address</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">{{deliveryaddress.Address1}}</h5>
-                                            <h5 class="card-title">{{deliveryaddress.Address2}}</h5>
-                                            <a href="address.html" class="btn btn-primary">Update Address</a>
-                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{billingaddress.Address1}}</h5>
+                                        <h5 class="card-title">{{billingaddress.Address2}}</h5>
+                                        <a href="address.html" class="btn btn-primary">Update Address</a>
                                     </div>
                                 </div>
-                            <hr class="d-sm-none">
-                        </div>
+                            <div class="card" style="margin-top:  15px;">
+                                    <div class="card-header">
+                                        <h4>Delivery Address</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{deliveryaddress.Address1}}</h5>
+                                        <h5 class="card-title">{{deliveryaddress.Address2}}</h5>
+                                        <a href="address.html" class="btn btn-primary">Update Address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <hr class="d-sm-none">
+                    </div>
     
         </script>
     

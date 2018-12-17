@@ -42,17 +42,12 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Contact:</label>
                 <div class="col-sm-10">
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle dropdownbtn" data-toggle="dropdown">
-                            Select One
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Customer Support</a>
-                            <a class="dropdown-item" href="#">Business Opportunities</a>
-                        </div>
-                    </div>
-
-                </div>
+                    <select id="inputState" class="form-control">
+                        <option selected>Select...</option>
+                        <option>Customer Support</option>
+                        <option>Business Opportunities</option>
+                    </select>
+               </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Name:</label>
@@ -80,7 +75,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-12 d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary" onclick="contactAlert()">Submit</button>
+                    <button type="submit" class="btn btn-lg btn-primary" onclick="contactAlert()">Submit</button>
                 </div>
             </div>
     </form>
