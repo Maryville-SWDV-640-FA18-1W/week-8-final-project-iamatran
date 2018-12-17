@@ -44,29 +44,42 @@
                     <div class="row">
             
                         <div class="col-sm-8">
-                                <h1> Welcome {{user.Name}}! </h1> 
-                                <h4 class="topmargin">Past Order History</h4>
-                                <table class="table table-hover table-striped">
+                                <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <th>Date</th>
-                                            <th>Order Number</th>
+                                            <th>Quantity</th>
+                                            <th>Item</th>
+                                            <th>Description</th>
                                             <th>Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{#orderhistory}}
+                                        {{#cart}}
                                             <tr>
-                                                <td>{{date}}</td>
-                                                <td>{{ordernumber}}</td>
+                                                <td>{{quantity}}</td>
+                                                <td>{{item}}</td>
+                                                <td>{{description}}</td>
                                                 <td>${{price}}</td>
                                             </tr>
-                                        {{/orderhistory}}
+                                        {{/cart}}
                                     </tbody>
+
+
+                                    <thead class="thead-dark">
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Total</th>
+                                                <th><u>$23.45</u></th>
+                                            </tr>
+                                        </thead>
                                 </table>
+                                <a href="order.html" class="btn btn-primary btn-lg">Return to Order Page</a>
+                                <a type="submit" class="btn btn-primary btn-lg" href="receipt.html" style="background: #007BFF">Confirm Order</a>
+                                
                         </div>
                         <div class="col-sm-4">
-                                <div class="card" style="margin-top: 185px">
+                                <div class="card" style="margin-top:">
                                         <div class="card-header">
                                             <h4>Billing Address</h4>
                                         </div>
@@ -76,7 +89,7 @@
                                             <a href="address.html" class="btn btn-primary">Update Address</a>
                                         </div>
                                     </div>
-                                <div class="card" style="margin-top: 110px">
+                                <div class="card" style="margin-top:  15px;">
                                         <div class="card-header">
                                             <h4>Delivery Address</h4>
                                         </div>
@@ -93,6 +106,7 @@
         </script>
     
     <div class="container topmargin">
+        <h1> Shopping Cart </h1> 
         <div id="target"></div>
     </div>
     
